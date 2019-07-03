@@ -10,7 +10,8 @@
                 <div class="panel-body">
                     MODIFIER VOS INFORMATIONS ICI
 
-
+                     <div type="submit" action="{{ route('profilePage') }}" class="btn btn-primary">VOIR MA PAGE PROFILE</div>
+                    
 
                     <form>
                         <div class="form-group col-md-12">

@@ -1,0 +1,1 @@
+{"version":3,"sources":["general.scss"],"names":[],"mappings":"AAAA;EACC,uBAAsB;EACtB,aAAY;EACZ,cAAa;EACb,YAAW,EACX;;AAGD;EACC,sBAAqB,EACrB","file":"app.css","sourcesContent":[".profile-picture-bloc{\r\n\tbackground-color:pink;\r\n\twidth:100px;\r\n\theight:100px;\r\n\tfloat:left;\r\n}\r\n\r\n\r\nbody{\r\n\tbackground-color:red;\r\n}"]}
