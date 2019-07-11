@@ -19,3 +19,17 @@ Route::auth();
 
 Route::get('/profilePage', 'PagesController@getProfilePage');
 
+Route::post('/profilePage/updateProfilePicture', 'PagesController@updateProfilePicture');
+
+
+Route::post('/profilePage/updateProfileInformation', 'PagesController@updateProfileInformation');
+
+
+
+Route::get('/profilePage', 'PagesController@getProfilePage');
+
+
+/*
+Route::post('/profilePage/updateProfileInformation}',  ['as' => 'profilePage.getProfilePage', 'uses' => 'PagesController@getProfilePage']);
+*/
+Route::patch('/profilePage/updateProfileInformation/',  ['as' => 'profilePage.update', 'uses' => 'PagesController@updateProfileInformation']);

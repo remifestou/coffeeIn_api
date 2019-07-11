@@ -5,10 +5,11 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.0.0",
     "gulp": "^3.9.1",
+    "jquery-ui": "^1.12.1",
     "laravel-elixir": "^5.0.0",
-    "laravel-mix": "^5.0.0",
-    "bootstrap-sass": "^3.0.0"
+    "laravel-mix": "^5.0.0"
   },
   "name": "coffeeIn_api",
   "description": "",
@@ -17,7 +18,9 @@
   "directories": {
     "test": "tests"
   },
-  "dependencies": {},
+  "dependencies": {
+    "croppie": "^2.6.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/remifestou/coffeeIn_api.git"

@@ -1,11 +1,96 @@
+$colorTextWhite : #FFFFFF;
+$greyText : #888;
+
+$lightGreyBackground : #F9F9F9;
+
+
+
+$profilePictureBlocSize : 200px;
 .profile-picture-bloc{
-	background-color:pink;
-	width:100px;
-	height:100px;
+	background-color:$lightGreyBackground;
+	width:$profilePictureBlocSize;
+	height:$profilePictureBlocSize;
 	float:left;
+	border-radius:2px;
+	box-shadow:0px 1px 5px 1px rgba(0,0,0,0.2);
+	position:relative;
+	>i{
+		width: 100%;
+		line-height: $profilePictureBlocSize;
+		font-size: 75px;
+		color:$greyText;
+		text-align:center;
+	}
+	.uploadButton{
+		position:absolute;
+		width: 100%;
+		height:100%;
+		line-height: $profilePictureBlocSize;
+		top:0;
+		left:0;
+		text-align:center;
+		font-size:55px;
+		border-radius:2px;
+		background-color:rgba(0,0,0, 0.5);
+		opacity: 0.8;
+		color: $colorTextWhite;
+		display: none;
+		i{
+
+		}
+	}
+	input[type="file"]{
+		position:absolute;
+		width: 100%;
+		height:100%;
+		top:0;
+		left:0;
+		opacity: 0;
+		z-index: 3;
+		cursor:pointer;
+		display: none;
+	}
+	&:hover{
+		.uploadButton, input[type="file"]{
+			display: block;
+		}
+	}
 }
 
 
-body{
-	background-color:red;
+#profilePictureCropper{
+	width:300px;
+	height:300px;
+	margin:20px auto;
+}
+
+
+
+.window{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: #fcfdfe;
+	box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+	border-radius: 4px;
+	min-width: 300px;
+	min-height:300px;
+	.window-header{
+		float: left;
+		width:100%;
+		display: flex;
+		.title{
+			flex:1 1 auto;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow:ellipsis;
+		}
+		.window-close{
+
+		}
+	}
+	.window-body{
+
+	}
 }
